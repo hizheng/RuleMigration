@@ -1,0 +1,189 @@
+Thu, 18 May 2017 17:15:52 manager.py[line:20] INFO init rule migrator
+Thu, 18 May 2017 17:15:52 rulemigrator.py[line:30] INFO Init DB connector
+Thu, 18 May 2017 17:15:52 rulemigrator.py[line:20] INFO Init simulate rule api configuration
+Thu, 18 May 2017 17:15:52 rulemigrator.py[line:25] INFO Init set approvals api configuration
+Thu, 18 May 2017 17:15:52 rulemigrator.py[line:35] INFO Init EART connector
+Thu, 18 May 2017 17:15:52 manager.py[line:20] INFO init rule migrator
+Thu, 18 May 2017 17:15:52 rulemigrator.py[line:30] INFO Init DB connector
+Thu, 18 May 2017 17:15:52 rulemigrator.py[line:20] INFO Init simulate rule api configuration
+Thu, 18 May 2017 17:15:52 rulemigrator.py[line:25] INFO Init set approvals api configuration
+Thu, 18 May 2017 17:15:52 rulemigrator.py[line:35] INFO Init EART connector
+Thu, 18 May 2017 17:18:07 manager.py[line:20] INFO init rule migrator
+Thu, 18 May 2017 17:18:07 rulemigrator.py[line:30] INFO Init DB connector
+Thu, 18 May 2017 17:18:07 rulemigrator.py[line:20] INFO Init simulate rule api configuration
+Thu, 18 May 2017 17:18:07 rulemigrator.py[line:25] INFO Init set approvals api configuration
+Thu, 18 May 2017 17:18:07 rulemigrator.py[line:35] INFO Init EART connector
+Thu, 18 May 2017 17:18:07 manager.py[line:20] INFO init rule migrator
+Thu, 18 May 2017 17:18:07 rulemigrator.py[line:30] INFO Init DB connector
+Thu, 18 May 2017 17:18:07 rulemigrator.py[line:20] INFO Init simulate rule api configuration
+Thu, 18 May 2017 17:18:07 rulemigrator.py[line:25] INFO Init set approvals api configuration
+Thu, 18 May 2017 17:18:07 rulemigrator.py[line:35] INFO Init EART connector
+Thu, 18 May 2017 17:18:07 dbconnectors.py[line:83] INFO Rollback all rule sets
+Thu, 18 May 2017 17:18:09 dbconnectors.py[line:68] INFO Rollback rule set for resource SCAppGrp:UOVTest, source CEPM
+Thu, 18 May 2017 17:23:15 manager.py[line:20] INFO init rule migrator
+Thu, 18 May 2017 17:23:15 rulemigrator.py[line:30] INFO Init DB connector
+Thu, 18 May 2017 17:23:15 rulemigrator.py[line:20] INFO Init simulate rule api configuration
+Thu, 18 May 2017 17:23:15 rulemigrator.py[line:25] INFO Init set approvals api configuration
+Thu, 18 May 2017 17:23:15 rulemigrator.py[line:35] INFO Init EART connector
+Thu, 18 May 2017 17:23:15 manager.py[line:20] INFO init rule migrator
+Thu, 18 May 2017 17:23:15 rulemigrator.py[line:30] INFO Init DB connector
+Thu, 18 May 2017 17:23:15 rulemigrator.py[line:20] INFO Init simulate rule api configuration
+Thu, 18 May 2017 17:23:15 rulemigrator.py[line:25] INFO Init set approvals api configuration
+Thu, 18 May 2017 17:23:15 rulemigrator.py[line:35] INFO Init EART connector
+Thu, 18 May 2017 17:23:15 rulemigrator.py[line:56] INFO Start to do rule sets migration
+Thu, 18 May 2017 17:23:18 rulemigrator.py[line:40] INFO Migrate rule set for resource SCAppGrp:UOVTest
+Thu, 18 May 2017 17:23:18 apiconnectors.py[line:35] DEBUG call api http://edsartrule-dev2.cloudapps.cisco.com/services/v1/rule/simulate/cepm
+Thu, 18 May 2017 17:23:18 apiconnectors.py[line:36] DEBUG request is {"groupName": "SCAppGrp", "source": "CEPM", "userId": "zhenghu", "name": "SCAppGrp:UOVTest", "baseType": "RESOURCE"}
+Thu, 18 May 2017 17:23:19 apiconnectors.py[line:44] DEBUG response is {"status":"Success","statusCode":"200","message":"Successfully get actions","resultData":{"default":false,"groupActions":["Role Owner Approve"],"roleActions":["Manager Approve","SpecificUserList:younwang,fehong"]}}
+Thu, 18 May 2017 17:23:19 apiconnectors.py[line:49] INFO Orignal approval actions for resource SCAppGrp:UOVTest is [u'Manager Approve', u'SpecificUserList:younwang,fehong']
+Thu, 18 May 2017 17:23:19 apiconnectors.py[line:71] DEBUG call api http://edsartrule-dev2.cloudapps.cisco.com/services/v1/ruleset/approve
+Thu, 18 May 2017 17:23:19 apiconnectors.py[line:72] DEBUG request is {"name": "SCAppGrp:UOVTest", "default": false, "userId": "zhenghu", "actions": ["Manager Approve", "SpecificUserList:younwang,fehong"], "groupName": "SCAppGrp", "alwaysUpdate": "true"}
+Thu, 18 May 2017 17:23:25 apiconnectors.py[line:80] DEBUG response is {"status":"Success","statusCode":"200","message":"Successfully set approve rule set with requestRuleId:6309,approveRuleId:6310,provisionRuleId:6311,ruleSetId:296,version:1.5 for ruleSetName:SCAppGrp:UOVTest-RuleSet,and map successfully!","resultData":null}
+Thu, 18 May 2017 17:33:21 manager.py[line:20] INFO init rule migrator
+Thu, 18 May 2017 17:33:21 rulemigrator.py[line:30] INFO Init DB connector
+Thu, 18 May 2017 17:33:21 rulemigrator.py[line:20] INFO Init simulate rule api configuration
+Thu, 18 May 2017 17:33:21 rulemigrator.py[line:25] INFO Init set approvals api configuration
+Thu, 18 May 2017 17:33:21 rulemigrator.py[line:35] INFO Init EART connector
+Thu, 18 May 2017 17:33:21 manager.py[line:20] INFO init rule migrator
+Thu, 18 May 2017 17:33:21 rulemigrator.py[line:30] INFO Init DB connector
+Thu, 18 May 2017 17:33:21 rulemigrator.py[line:20] INFO Init simulate rule api configuration
+Thu, 18 May 2017 17:33:21 rulemigrator.py[line:25] INFO Init set approvals api configuration
+Thu, 18 May 2017 17:33:21 rulemigrator.py[line:35] INFO Init EART connector
+Thu, 18 May 2017 17:33:21 dbconnectors.py[line:89] INFO Rollback all rule sets
+Thu, 18 May 2017 17:33:23 dbconnectors.py[line:68] INFO Rollback rule set for resource SCAppGrp:UOVTest, source CEPM
+Thu, 18 May 2017 17:45:01 manager.py[line:20] INFO init rule migrator
+Thu, 18 May 2017 17:45:01 rulemigrator.py[line:30] INFO Init DB connector
+Thu, 18 May 2017 17:45:01 rulemigrator.py[line:20] INFO Init simulate rule api configuration
+Thu, 18 May 2017 17:45:01 rulemigrator.py[line:25] INFO Init set approvals api configuration
+Thu, 18 May 2017 17:45:01 rulemigrator.py[line:35] INFO Init EART connector
+Thu, 18 May 2017 17:45:01 manager.py[line:20] INFO init rule migrator
+Thu, 18 May 2017 17:45:01 rulemigrator.py[line:30] INFO Init DB connector
+Thu, 18 May 2017 17:45:01 rulemigrator.py[line:20] INFO Init simulate rule api configuration
+Thu, 18 May 2017 17:45:01 rulemigrator.py[line:25] INFO Init set approvals api configuration
+Thu, 18 May 2017 17:45:01 rulemigrator.py[line:35] INFO Init EART connector
+Thu, 18 May 2017 17:45:01 dbconnectors.py[line:90] INFO Rollback all rule sets
+Thu, 18 May 2017 17:45:28 manager.py[line:20] INFO init rule migrator
+Thu, 18 May 2017 17:45:28 rulemigrator.py[line:30] INFO Init DB connector
+Thu, 18 May 2017 17:45:28 rulemigrator.py[line:20] INFO Init simulate rule api configuration
+Thu, 18 May 2017 17:45:28 rulemigrator.py[line:25] INFO Init set approvals api configuration
+Thu, 18 May 2017 17:45:28 rulemigrator.py[line:35] INFO Init EART connector
+Thu, 18 May 2017 17:45:28 manager.py[line:20] INFO init rule migrator
+Thu, 18 May 2017 17:45:28 rulemigrator.py[line:30] INFO Init DB connector
+Thu, 18 May 2017 17:45:28 rulemigrator.py[line:20] INFO Init simulate rule api configuration
+Thu, 18 May 2017 17:45:28 rulemigrator.py[line:25] INFO Init set approvals api configuration
+Thu, 18 May 2017 17:45:28 rulemigrator.py[line:35] INFO Init EART connector
+Thu, 18 May 2017 17:45:28 dbconnectors.py[line:90] INFO Rollback all rule sets
+Thu, 18 May 2017 17:45:31 dbconnectors.py[line:68] INFO Rollback rule set for resource SCAppGrp:UOVTest, source CEPM
+Thu, 18 May 2017 17:47:33 manager.py[line:20] INFO init rule migrator
+Thu, 18 May 2017 17:47:33 rulemigrator.py[line:30] INFO Init DB connector
+Thu, 18 May 2017 17:47:33 rulemigrator.py[line:20] INFO Init simulate rule api configuration
+Thu, 18 May 2017 17:47:33 rulemigrator.py[line:25] INFO Init set approvals api configuration
+Thu, 18 May 2017 17:47:33 rulemigrator.py[line:35] INFO Init EART connector
+Thu, 18 May 2017 17:47:33 manager.py[line:20] INFO init rule migrator
+Thu, 18 May 2017 17:47:33 rulemigrator.py[line:30] INFO Init DB connector
+Thu, 18 May 2017 17:47:33 rulemigrator.py[line:20] INFO Init simulate rule api configuration
+Thu, 18 May 2017 17:47:33 rulemigrator.py[line:25] INFO Init set approvals api configuration
+Thu, 18 May 2017 17:47:33 rulemigrator.py[line:35] INFO Init EART connector
+Thu, 18 May 2017 17:47:33 dbconnectors.py[line:90] INFO Rollback all rule sets
+Thu, 18 May 2017 17:47:55 manager.py[line:20] INFO init rule migrator
+Thu, 18 May 2017 17:47:55 rulemigrator.py[line:30] INFO Init DB connector
+Thu, 18 May 2017 17:47:55 rulemigrator.py[line:20] INFO Init simulate rule api configuration
+Thu, 18 May 2017 17:47:55 rulemigrator.py[line:25] INFO Init set approvals api configuration
+Thu, 18 May 2017 17:47:55 rulemigrator.py[line:35] INFO Init EART connector
+Thu, 18 May 2017 17:47:55 manager.py[line:20] INFO init rule migrator
+Thu, 18 May 2017 17:47:55 rulemigrator.py[line:30] INFO Init DB connector
+Thu, 18 May 2017 17:47:55 rulemigrator.py[line:20] INFO Init simulate rule api configuration
+Thu, 18 May 2017 17:47:55 rulemigrator.py[line:25] INFO Init set approvals api configuration
+Thu, 18 May 2017 17:47:55 rulemigrator.py[line:35] INFO Init EART connector
+Thu, 18 May 2017 17:47:55 dbconnectors.py[line:90] INFO Rollback all rule sets
+Thu, 18 May 2017 17:47:57 dbconnectors.py[line:68] INFO Rollback rule set for resource SCAppGrp:UOVTest, source CEPM
+Thu, 18 May 2017 17:52:42 manager.py[line:20] INFO init rule migrator
+Thu, 18 May 2017 17:52:42 rulemigrator.py[line:30] INFO Init DB connector
+Thu, 18 May 2017 17:52:42 rulemigrator.py[line:20] INFO Init simulate rule api configuration
+Thu, 18 May 2017 17:52:42 rulemigrator.py[line:25] INFO Init set approvals api configuration
+Thu, 18 May 2017 17:52:42 rulemigrator.py[line:35] INFO Init EART connector
+Thu, 18 May 2017 17:52:42 manager.py[line:20] INFO init rule migrator
+Thu, 18 May 2017 17:52:42 rulemigrator.py[line:30] INFO Init DB connector
+Thu, 18 May 2017 17:52:42 rulemigrator.py[line:20] INFO Init simulate rule api configuration
+Thu, 18 May 2017 17:52:42 rulemigrator.py[line:25] INFO Init set approvals api configuration
+Thu, 18 May 2017 17:52:42 rulemigrator.py[line:35] INFO Init EART connector
+Thu, 18 May 2017 17:52:42 dbconnectors.py[line:91] INFO Rollback all rule sets
+Thu, 18 May 2017 17:52:44 dbconnectors.py[line:68] INFO Rollback rule set for resource SCAppGrp:UOVTest, source CEPM
+Thu, 18 May 2017 17:55:13 manager.py[line:20] INFO init rule migrator
+Thu, 18 May 2017 17:55:13 rulemigrator.py[line:30] INFO Init DB connector
+Thu, 18 May 2017 17:55:13 rulemigrator.py[line:20] INFO Init simulate rule api configuration
+Thu, 18 May 2017 17:55:13 rulemigrator.py[line:25] INFO Init set approvals api configuration
+Thu, 18 May 2017 17:55:13 rulemigrator.py[line:35] INFO Init EART connector
+Thu, 18 May 2017 17:55:13 manager.py[line:20] INFO init rule migrator
+Thu, 18 May 2017 17:55:13 rulemigrator.py[line:30] INFO Init DB connector
+Thu, 18 May 2017 17:55:13 rulemigrator.py[line:20] INFO Init simulate rule api configuration
+Thu, 18 May 2017 17:55:13 rulemigrator.py[line:25] INFO Init set approvals api configuration
+Thu, 18 May 2017 17:55:13 rulemigrator.py[line:35] INFO Init EART connector
+Thu, 18 May 2017 17:55:13 rulemigrator.py[line:57] INFO Start to do rule sets migration
+Thu, 18 May 2017 17:55:15 rulemigrator.py[line:40] INFO Migrate rule set for resource SCAppGrp:UOVTest
+Thu, 18 May 2017 17:55:15 apiconnectors.py[line:35] DEBUG call api http://edsartrule-dev2.cloudapps.cisco.com/services/v1/rule/simulate/cepm
+Thu, 18 May 2017 17:55:15 apiconnectors.py[line:36] DEBUG request is {"groupName": "SCAppGrp", "source": "CEPM", "userId": "zhenghu", "name": "SCAppGrp:UOVTest", "baseType": "RESOURCE"}
+Thu, 18 May 2017 17:55:16 apiconnectors.py[line:44] DEBUG response is {"status":"Success","statusCode":"200","message":"Successfully get actions","resultData":{"default":false,"groupActions":["Role Owner Approve"],"roleActions":["Manager Approve","SpecificUserList:younwang,fehong"]}}
+Thu, 18 May 2017 17:55:16 apiconnectors.py[line:49] INFO Orignal approval actions for resource SCAppGrp:UOVTest is [u'Manager Approve', u'SpecificUserList:younwang,fehong']
+Thu, 18 May 2017 17:55:16 apiconnectors.py[line:71] DEBUG call api http://edsartrule-dev2.cloudapps.cisco.com/services/v1/ruleset/approve
+Thu, 18 May 2017 17:55:16 apiconnectors.py[line:72] DEBUG request is {"name": "SCAppGrp:UOVTest", "default": false, "userId": "zhenghu", "actions": ["Manager Approve", "SpecificUserList:younwang,fehong"], "groupName": "SCAppGrp", "alwaysUpdate": "true"}
+Thu, 18 May 2017 17:55:23 apiconnectors.py[line:80] DEBUG response is {"status":"Success","statusCode":"200","message":"Successfully set approve rule set with requestRuleId:6312,approveRuleId:6313,provisionRuleId:6314,ruleSetId:296,version:1.6 for ruleSetName:SCAppGrp:UOVTest-RuleSet,and map successfully!","resultData":null}
+Thu, 18 May 2017 18:07:00 manager.py[line:20] INFO init rule migrator
+Thu, 18 May 2017 18:07:00 rulemigrator.py[line:30] INFO Init DB connector
+Thu, 18 May 2017 18:07:00 rulemigrator.py[line:20] INFO Init simulate rule api configuration
+Thu, 18 May 2017 18:07:00 rulemigrator.py[line:25] INFO Init set approvals api configuration
+Thu, 18 May 2017 18:07:00 rulemigrator.py[line:35] INFO Init EART connector
+Thu, 18 May 2017 18:07:00 manager.py[line:20] INFO init rule migrator
+Thu, 18 May 2017 18:07:00 rulemigrator.py[line:30] INFO Init DB connector
+Thu, 18 May 2017 18:07:00 rulemigrator.py[line:20] INFO Init simulate rule api configuration
+Thu, 18 May 2017 18:07:00 rulemigrator.py[line:25] INFO Init set approvals api configuration
+Thu, 18 May 2017 18:07:00 rulemigrator.py[line:35] INFO Init EART connector
+Thu, 18 May 2017 18:07:00 rulemigrator.py[line:56] INFO Start to do rule sets migration
+Thu, 18 May 2017 18:07:03 rulemigrator.py[line:40] INFO Migrate rule set for resource SCAppGrp:UOVTest
+Thu, 18 May 2017 18:07:03 apiconnectors.py[line:33] DEBUG call api http://edsartrule-dev2.cloudapps.cisco.com/services/v1/rule/simulate/cepm
+Thu, 18 May 2017 18:07:03 apiconnectors.py[line:34] DEBUG request is {"groupName": "SCAppGrp", "source": "CEPM", "userId": "zhenghu", "name": "SCAppGrp:UOVTest", "baseType": "RESOURCE"}
+Thu, 18 May 2017 18:07:03 apiconnectors.py[line:42] DEBUG response is {"status":"Success","statusCode":"200","message":"Successfully get actions","resultData":{"default":false,"groupActions":["Role Owner Approve"],"roleActions":["Manager Approve","SpecificUserList:fehong,younwang"]}}
+Thu, 18 May 2017 18:07:03 apiconnectors.py[line:47] INFO Orignal approval actions for resource SCAppGrp:UOVTest is [u'Manager Approve', u'SpecificUserList:fehong,younwang']
+Thu, 18 May 2017 18:07:03 apiconnectors.py[line:72] DEBUG call api http://edsartrule-dev2.cloudapps.cisco.com/services/v1/ruleset/approve
+Thu, 18 May 2017 18:07:03 apiconnectors.py[line:73] DEBUG request is {"name": "SCAppGrp:UOVTest", "default": false, "userId": "zhenghu", "actions": ["Manager Approve", "SpecificUserList:fehong,younwang"], "groupName": "SCAppGrp", "alwaysUpdate": "true"}
+Thu, 18 May 2017 18:07:08 apiconnectors.py[line:81] DEBUG response is {"status":"Success","statusCode":"200","message":"Successfully set approve rule set with requestRuleId:6318,approveRuleId:6319,provisionRuleId:6320,ruleSetId:296,version:1.7 for ruleSetName:SCAppGrp:UOVTest-RuleSet,and map successfully!","resultData":null}
+Thu, 18 May 2017 18:11:19 manager.py[line:20] INFO init rule migrator
+Thu, 18 May 2017 18:11:19 rulemigrator.py[line:30] INFO Init DB connector
+Thu, 18 May 2017 18:11:19 rulemigrator.py[line:20] INFO Init simulate rule api configuration
+Thu, 18 May 2017 18:11:19 rulemigrator.py[line:25] INFO Init set approvals api configuration
+Thu, 18 May 2017 18:11:19 rulemigrator.py[line:35] INFO Init EART connector
+Thu, 18 May 2017 18:11:19 manager.py[line:20] INFO init rule migrator
+Thu, 18 May 2017 18:11:19 rulemigrator.py[line:30] INFO Init DB connector
+Thu, 18 May 2017 18:11:19 rulemigrator.py[line:20] INFO Init simulate rule api configuration
+Thu, 18 May 2017 18:11:19 rulemigrator.py[line:25] INFO Init set approvals api configuration
+Thu, 18 May 2017 18:11:19 rulemigrator.py[line:35] INFO Init EART connector
+Thu, 18 May 2017 18:11:19 rulemigrator.py[line:56] INFO Start to do rule sets migration
+Thu, 18 May 2017 18:11:22 rulemigrator.py[line:40] INFO Migrate rule set for resource SCAppGrp:UOVTest
+Thu, 18 May 2017 18:11:22 apiconnectors.py[line:33] DEBUG call api http://edsartrule-dev2.cloudapps.cisco.com/services/v1/rule/simulate/cepm
+Thu, 18 May 2017 18:11:22 apiconnectors.py[line:34] DEBUG request is {"groupName": "SCAppGrp", "source": "CEPM", "userId": "zhenghu", "name": "SCAppGrp:UOVTest", "baseType": "RESOURCE"}
+Thu, 18 May 2017 18:11:22 apiconnectors.py[line:42] DEBUG response is {"status":"Success","statusCode":"200","message":"Successfully get actions","resultData":{"default":false,"groupActions":["Role Owner Approve"],"roleActions":["Manager Approve","SpecificUserList:fehong,younwang"]}}
+Thu, 18 May 2017 18:11:22 apiconnectors.py[line:47] INFO Orignal approval actions for resource SCAppGrp:UOVTest is [u'Manager Approve', u'SpecificUserList:fehong,younwang']
+Thu, 18 May 2017 18:11:22 apiconnectors.py[line:73] DEBUG call api http://edsartrule-dev2.cloudapps.cisco.com/services/v1/ruleset/approve
+Thu, 18 May 2017 18:11:22 apiconnectors.py[line:74] DEBUG request is {"name": "SCAppGrp:UOVTest", "default": false, "userId": "zhenghu", "actions": ["Manager Approve", "SpecificUserList:fehong,younwang"], "groupName": "SCAppGrp", "alwaysUpdate": "true"}
+Thu, 18 May 2017 18:11:29 apiconnectors.py[line:82] DEBUG response is {"status":"Success","statusCode":"200","message":"Successfully set approve rule set with requestRuleId:6321,approveRuleId:6322,provisionRuleId:6323,ruleSetId:296,version:1.8 for ruleSetName:SCAppGrp:UOVTest-RuleSet,and map successfully!","resultData":null}
+Thu, 18 May 2017 18:19:49 manager.py[line:20] INFO init rule migrator
+Thu, 18 May 2017 18:19:49 rulemigrator.py[line:30] INFO Init DB connector
+Thu, 18 May 2017 18:19:49 rulemigrator.py[line:20] INFO Init simulate rule api configuration
+Thu, 18 May 2017 18:19:49 rulemigrator.py[line:25] INFO Init set approvals api configuration
+Thu, 18 May 2017 18:19:49 rulemigrator.py[line:35] INFO Init EART connector
+Thu, 18 May 2017 18:19:49 manager.py[line:20] INFO init rule migrator
+Thu, 18 May 2017 18:19:49 rulemigrator.py[line:30] INFO Init DB connector
+Thu, 18 May 2017 18:19:49 rulemigrator.py[line:20] INFO Init simulate rule api configuration
+Thu, 18 May 2017 18:19:49 rulemigrator.py[line:25] INFO Init set approvals api configuration
+Thu, 18 May 2017 18:19:49 rulemigrator.py[line:35] INFO Init EART connector
+Thu, 18 May 2017 18:19:49 rulemigrator.py[line:56] INFO Start to do rule sets migration
+Thu, 18 May 2017 18:19:52 rulemigrator.py[line:40] INFO Migrate rule set for resource SCAppGrp:UOVTest
+Thu, 18 May 2017 18:19:52 apiconnectors.py[line:33] DEBUG call api http://edsartrule-dev2.cloudapps.cisco.com/services/v1/rule/simulate/cepm
+Thu, 18 May 2017 18:19:52 apiconnectors.py[line:34] DEBUG request is {"groupName": "SCAppGrp", "source": "CEPM", "userId": "zhenghu", "name": "SCAppGrp:UOVTest", "baseType": "RESOURCE"}
+Thu, 18 May 2017 18:19:52 apiconnectors.py[line:42] DEBUG response is {"status":"Success","statusCode":"200","message":"Successfully get actions","resultData":{"default":false,"groupActions":["Role Owner Approve"],"roleActions":["Manager Approve","SpecificUserList:fehong,younwang"]}}
+Thu, 18 May 2017 18:19:52 apiconnectors.py[line:47] INFO Orignal approval actions for resource SCAppGrp:UOVTest is [u'Manager Approve', u'SpecificUserList:fehong,younwang']
+Thu, 18 May 2017 18:19:52 apiconnectors.py[line:55] INFO Set approvals for resource SCAppGrp:UOVTest
+Thu, 18 May 2017 18:19:52 apiconnectors.py[line:56] INFO Actions are [u'Manager Approve', u'SpecificUserList:fehong,younwang']
+Thu, 18 May 2017 18:19:52 apiconnectors.py[line:72] DEBUG call api http://edsartrule-dev2.cloudapps.cisco.com/services/v1/ruleset/approve
+Thu, 18 May 2017 18:19:52 apiconnectors.py[line:73] DEBUG request is {"name": "SCAppGrp:UOVTest", "default": false, "userId": "zhenghu", "actions": ["Manager Approve", "SpecificUserList:fehong,younwang"], "groupName": "SCAppGrp", "alwaysUpdate": "true"}
+Thu, 18 May 2017 18:19:59 apiconnectors.py[line:81] DEBUG response is {"status":"Success","statusCode":"200","message":"Successfully set approve rule set with requestRuleId:6324,approveRuleId:6325,provisionRuleId:6326,ruleSetId:296,version:1.9 for ruleSetName:SCAppGrp:UOVTest-RuleSet,and map successfully!","resultData":null}
